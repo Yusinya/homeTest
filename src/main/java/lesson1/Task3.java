@@ -9,21 +9,18 @@ System.out.println, System.out.print можно использовать тол�
 public class Task3 {
 
     public static void main(String[] args) {
-        String s = "Vladimir";
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
+        String s = "Yuliia";
+        int a = 5;
+        int b = 9;
+        int i = 0;
+        while (i < a) {
+            i++;
+            System.out.print("\n" + s + " ");
+            int g = 0;
+            while (g < b) {
+                System.out.print(s + " ");
+                g++;
+            }
+        }
     }
 }
