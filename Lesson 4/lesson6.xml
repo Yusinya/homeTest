@@ -4,8 +4,23 @@
         <classes>
             <class name="test.java.lesson_testng.TestCat">
                 <methods>
-                    <include name="testGetAge2"></include>
-<!--                    <exclude name="testGetAge"></exclude>-->
+<!--                    <include name="testGetAge2"></include>-->
+                    <exclude name="testGetAge"></exclude>
+                    <exclude name="testGetAge2"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="SecontTest">
+        <classes>
+            <class name="test.java.HomeworkTestNG.TestForTask1"></class>
+        </classes>
+    </test>
+    <test name="TestFor2Task">
+        <classes>
+            <class name="test.java.HomeworkTestNG.TestForTask2">
+                <methods>
+                    <exclude name="getName"></exclude>
                 </methods>
             </class>
         </classes>

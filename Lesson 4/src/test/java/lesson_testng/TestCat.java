@@ -39,7 +39,7 @@ public class TestCat {
         cat.setAge(ageToChange);
         int actualAge = cat.getAge();
         int expectedAge = ageToChange;
-        System.out.printf("Test 1 with age to change = '%d' and expected age = '%d'\n", ageToChange, expectedAge)
+        System.out.printf("Test 1 with age to change = '%d' and expected age = '%d'\n", ageToChange, expectedAge);
         assertEquals(actualAge, expectedAge, String.format ("Expected cat age to be '%d'", expectedAge));
     }
 
@@ -70,7 +70,6 @@ public class TestCat {
 
         assertEquals(actualAge, expectedAge/*, String.format ("Expected cat age to be '%d'", expectedAge)*/);
     }
-
     @DataProvider(name = "dp")
     public Object[][] provider() {
         return new Object[][] {
