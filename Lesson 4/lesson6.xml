@@ -21,7 +21,15 @@
             <class name="test.java.HomeworkTestNG.TestForTask2">
                 <methods>
                     <exclude name="getName"></exclude>
+                    <parameter name="expectedRow" value="5"></parameter>
                 </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TestForTask5">
+        <classes>
+            <class name="test.java.HomeworkTestNG.TestForTask5">
+
             </class>
         </classes>
     </test>

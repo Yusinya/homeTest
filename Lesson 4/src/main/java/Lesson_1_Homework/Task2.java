@@ -7,6 +7,9 @@ System.out.println, System.out.print можно использовать тол�
 */
 
 public class Task2 {
+    public static void main(String[] args) {
+        System.out.println(getName());
+    }
 
         public static String getName(){
         String s = "Yuliia";
@@ -14,13 +17,14 @@ public class Task2 {
         int a = 5;
         int b = 9;
         for (int i = 0; i < a; i++) {
-            result = ("\n" + s + " ");
+            result += s + " ";
             for ( int g = 0; g < b; g++) {
-                result = (s + " ");
+                result += s + " ";
             }
+            result += "\n";
         }
-        return result ;
-    }
+        return result;
+        }
 }
 
 

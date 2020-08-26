@@ -18,11 +18,10 @@ public class TestCat {
     public void setup() {
         matrixRows = cat.getMatrix();
     }
-
-    @AfterMethod
-    public void tearDown() {
-        System.out.println("After methods");
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        System.out.println("After methods");
+//    }
 
     @AfterClass
     public void afterAllMethods() {
