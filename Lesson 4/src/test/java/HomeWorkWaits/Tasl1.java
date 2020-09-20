@@ -54,10 +54,10 @@ public class Tasl1 {
     String borderSurname = driver.findElement(surname).getCssValue("border-color");
     String borderUsername = driver.findElement(username).getCssValue("border-color");
     String borderPassword = driver.findElement(password).getCssValue("border-color");
-    assertEquals(borderName, expectedRedBorder, "Name border is not red");
-    assertEquals(borderPassword, expectedRedBorder, "Password border is not red");
-    assertEquals(borderSurname, expectedRedBorder, "Surname border is not red");
-    assertEquals(borderUsername, expectedRedBorder, "Username border is not red");
+    assertEquals(borderName, expectedRedBorder, String.format("%s border is not red", name));
+    assertEquals(borderPassword, expectedRedBorder, String.format("%s border is not red", password));
+    assertEquals(borderSurname, expectedRedBorder, String.format("%s border is not red", surname));
+    assertEquals(borderUsername, expectedRedBorder, String.format("%s border is not red", username));
     }
 
 
@@ -72,10 +72,10 @@ public class Tasl1 {
         String borderSurname = driver.findElement(surname).getCssValue("border-color");
         String borderUsername = driver.findElement(username).getCssValue("border-color");
         String borderPassword = driver.findElement(password).getCssValue("border-color");
-        assertEquals(borderName, expectedWhiteBorder, "Name border is not white");
-        assertEquals(borderSurname, expectedWhiteBorder, "Surname border is not white");
-        assertEquals(borderUsername, expectedRedBorder, "Username border is not red");
-        assertEquals(borderPassword, expectedRedBorder, "Password border is not red");
+        assertEquals(borderName, expectedWhiteBorder, String.format("%s border is not white", name));
+        assertEquals(borderSurname, expectedWhiteBorder, String.format("%s border is not white", surname));
+        assertEquals(borderUsername, expectedRedBorder, String.format("%s border is not white", username));
+        assertEquals(borderPassword, expectedRedBorder, String.format("%s border is not white", password));
 
     }
 
