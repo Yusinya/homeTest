@@ -1,0 +1,11 @@
+homePage.open();
+homePage.clickContacts();
+contactPage.clickQA();
+List<WibElement> questions = qaPage.getQuestions();
+
+homePage
+    .open()
+    .clickContacts();
+contactPage
+    .clickQA();
+List<WibElement> questions = qaPage.getQuestions();
