@@ -14,6 +14,19 @@
     </properties>
 
     <build>
+        <resources>
+            <resource>
+                <directory>
+                    src/main/resources
+                </directory>
+            </resource>
+            <resource>
+                <directory>
+                    src/test/recources
+                </directory>
+            </resource>
+        </resources>
+
         <sourceDirectory>
             src
         </sourceDirectory>
@@ -56,7 +69,16 @@
                 <artifactId>selenium-java</artifactId>
                 <version>3.141.59</version>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
     </dependencies>
-
 
 </project>

@@ -18,8 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
 
-public class PoDummy {
-    WebDriver driver;
+public class PoDummy extends TestBaseSetup{
     HomePage homePage;
     ContactPage contactPage;
     QaPage qaPage;
@@ -27,13 +26,7 @@ public class PoDummy {
 
 
     @BeforeMethod
-    public void setup() {
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-notifications");
-        driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(1, TimeUnit.MILLISECONDS);
+    public void pageFactory() {
         homePage = new HomePage(driver);
         contactPage = new ContactPage(driver);
         qaPage = new QaPage(driver);
@@ -57,8 +50,5 @@ public class PoDummy {
         }
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
+
 }
